@@ -1,0 +1,14 @@
+server {
+    listen       ${NGINX_PORT};
+    server_name  _;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    location ${HEALTH_CHECK_PATH} {
+        default_type text/html;
+        return 200;
+    }
+}
