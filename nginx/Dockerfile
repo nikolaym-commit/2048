@@ -1,4 +1,4 @@
-FROM nginx:stable-alpine
+FROM public.ecr.aws/nginx/nginx:stable-alpine
 
 ARG NGINX_PORT=80
 ARG HEALTH_CHECK_PATH=/health
