@@ -1,6 +1,6 @@
 FROM public.ecr.aws/nginx/nginx:stable-alpine
 
-ARG NGINX_PORT=80
+ARG NGINX_PORT=8080
 ARG HEALTH_CHECK_PATH=/health
 ARG SERVICE_NAME=nginx
 
